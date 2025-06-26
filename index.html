@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ORION ⭐</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./orion.js" ></script>
+    </head>
+
+    <body>
+        <h1>O.R.I.O.N. v0.1</h1>
+        <p>Welcome to ORION, the <b>O</b>verly-simplified <b>R</b>educed-complexity <b>I</b>nformation-calculator <b>O</b>f <b>N</b>aturally-observed-stars :)</p>
+        <p>Pls don't use this for actual professional calculations, this was made for funsies by an Astrophysics minor, so she's not a forefront academic! Like, was made in javascript, sooooo</p>
+        <h2>Inputs</h2>
+        <b>Warning! Star currently needs to be in the Main Sequence for more accurate results.</b><br>
+        
+        <label for="starMass">Stellar Mass (M☉)</label>
+        <input 
+        id="starMass" 
+        type="number"
+        value="2.15"
+        />
+
+        <label for="starDistance">Stellar Distance (Ly)</label>
+        <input 
+        id="starDistance" 
+        type="number"
+        value="25.04"
+        />
+        
+        <label for="starAppMagnitude">Apparent Visual Magnitude</label>
+        <input 
+        id="starAppMagnitude" 
+        type="number"
+        value="0.03"
+        /> 
+
+        <label for="starBVMagnitude">B-V Magnitude</label>
+        <input 
+        id="starBVMagnitude" 
+        type="number"
+        value="0.00"
+        /> 
+        
+        <br>
+
+        <label for="starPreset">Don't know where to start? Pick a star!</label>
+        <select name="pets" id="starPreset">
+            <option value="">--Feel free to choose an option--</option>
+            <option value="Sun">Sun</option>
+            <option value="Vega">Vega</option>
+            <option value="ProcyonA">Procyon A</option>
+        </select>
+        
+
+        <br>
+
+        <h2>Outputs</h2>
+        
+        <p>Stellar Radius: <b id="starRadius"></b></p>
+        <p>Stellar Luminosity: <b id="starLum"></b></p>
+        <p>Stellar Absolute Magnitude: <b id="starAbsMag"></b></p>
+        <p>Stellar Flux: <b id="starFlux"></b></p>
+        <p>B-V Surface Temperature: <b id="starSurfTemp"></b></p>
+        <p>Star Mass Change Rate: <b id="starMassChangeRate"></b></p>
+    </body>
+</html>
