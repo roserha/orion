@@ -3,6 +3,7 @@
     <head>
         <title>ORION ⭐</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/pts/dist/pts.js"></script>
         <script src="./orion.js" ></script>
     </head>
 
@@ -40,15 +41,25 @@
         type="number"
         value="0.00"
         /> 
-        
+
+        <label for="starType">Star Type</label>
+        <select name="types" id="starType">
+            <option value="MS">Main Sequence</option>
+            <option value="WD">White Dwarf</option>
+            <option value="NS">Neutron Star</option>
+        </select>
+
         <br>
 
         <label for="starPreset">Don't know where to start? Pick a star!</label>
-        <select name="pets" id="starPreset">
+        <select name="presets" id="starPreset">
             <option value="">--Feel free to choose an option--</option>
             <option value="Sun">Sun</option>
             <option value="Vega">Vega</option>
             <option value="ProcyonA">Procyon A</option>
+            <option value="SiriusA">Sirius A</option>
+            <option value="SiriusB">Sirius B</option>
+            <option value="PSRJ09520607">PSR J0952–0607</option>
         </select>
         
 
@@ -62,5 +73,8 @@
         <p>Stellar Flux: <b id="starFlux"></b></p>
         <p>B-V Surface Temperature: <b id="starSurfTemp"></b></p>
         <p>Star Mass Change Rate: <b id="starMassChangeRate"></b></p>
+
+        <canvas id="starCanvas" width="400" height = "400"></canvas>
+        <div id="example"></div>
     </body>
 </html>
