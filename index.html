@@ -61,6 +61,22 @@
             <option value="SiriusB">Sirius B</option>
             <option value="PSRJ09520607">PSR J0952–0607</option>
         </select>
+
+        <br>
+
+        <label for="starRenderOutline">Render with reference outline?</label>
+        <input
+        id="starRenderOutline"
+        type="checkbox"
+        checked="false"
+        />
+
+        <label for="starRenderStars">Render with background stars?</label>
+        <input
+        id="starRenderStars"
+        type="checkbox"
+        checked="true"
+        />
         
 
         <br>
@@ -73,6 +89,7 @@
         <p>Stellar Flux: <b id="starFlux"></b></p>
         <p>B-V Surface Temperature: <b id="starSurfTemp"></b></p>
         <p>Star Mass Change Rate: <b id="starMassChangeRate"></b></p>
+        <p>Star Angular Size: <b id="starAngularSize"></b></p>
 
         <canvas id="starCanvas" width="400" height = "400"></canvas>
         <div id="example"></div>
